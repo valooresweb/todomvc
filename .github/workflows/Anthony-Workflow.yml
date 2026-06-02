@@ -13,6 +13,7 @@ jobs:
         
       - name: Copy code
         run: |
-          mkdir -p /opt/myapp
-          rsync -av ./ /opt/myapp/
+          mkdir-p  ~/myapp
+          rsync -av --delete ./ ~/myapp/
+          
         
