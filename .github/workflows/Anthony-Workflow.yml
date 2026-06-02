@@ -16,6 +16,6 @@ jobs:
         
       - name: Copy code
         run: |
-          mkdir -p /opt/myapp
-          cp -r . /opt/myapp/
+          mkdir -p /home/Anthony/
+          cp -r . /home/Anthony
       
