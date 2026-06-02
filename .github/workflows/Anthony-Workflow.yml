@@ -15,5 +15,9 @@ jobs:
         run: |
           mkdir-p  ~/myapp
           rsync -av --delete ./ ~/myapp/
+
+      - name: Create directory
+        run: |
+          mkdir -p ~/myapp
           
         
