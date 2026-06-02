@@ -16,6 +16,6 @@ jobs:
         
       - name: Copy code
         run: |
-          sudo mkdir -p /opt/myapp
-          sudo cp -r . /opt/myapp/
+          mkdir -p /opt/myapp
+          cp -r . /opt/myapp/
       
