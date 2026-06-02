@@ -1,9 +1,6 @@
 name: CI/CD Deploy
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
  
 jobs:
@@ -16,6 +13,6 @@ jobs:
         
       - name: Copy code
         run: |
-          mkdir -p /home/Anthony/
-          cp -r . /home/Anthony
+          mkdir -p /home/Anthony/myapp
+          cp -r . /home/Anthony/myapp
       
