@@ -1,0 +1,21 @@
+name: CI/CD Deploy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+ 
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Copy code
+        run: |
+          sudo mkdir -p /opt/myapp
+          sudo cp -r . /opt/myapp/
+      
