@@ -13,6 +13,6 @@ jobs:
         
       - name: Copy code
         run: |
-          mkdir -p /home/Anthony/myapp
-          cp -r . /home/Anthony/myapp
+          mkdir -p /home/Maalouf/myapp
+          cp -r . /home/Maalouf/myapp
       
