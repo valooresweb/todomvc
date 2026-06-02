@@ -13,10 +13,6 @@ jobs:
         
       - name: Copy code
         run: |
-          mkdir -p /home/Maalouf/myapp
-          cp -r . /home/Maalouf/myapp
-          
-      - name: Deploy
-        run: |
-          mkdir -p ~/myapp
-          rsync -av ./ ~/myapp/
+          mkdir -p /opt/myapp
+          rsync -av ./ /opt/myapp/
+        
